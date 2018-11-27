@@ -5,7 +5,7 @@ public class Person {
     private int age;	
   
     public Person(int initialAge) {
-  	// Add some more code to run some checks on initialAge
+  		// Add some more code to run some checks on initialAge
         if(initialAge > 0){
             age = initialAge;
         }else{
@@ -35,15 +35,15 @@ public class Person {
 	Scanner sc = new Scanner(System.in);
 	    int T = sc.nextInt();
 	    for (int i = 0; i < T; i++) {
-		int age = sc.nextInt();
-		Person p = new Person(age);
-		p.amIOld();
-		for (int j = 0; j < 3; j++) {
-		    p.yearPasses();
+			int age = sc.nextInt();
+			Person p = new Person(age);
+			p.amIOld();
+				for (int j = 0; j < 3; j++) {
+					p.yearPasses();
+				}
+			p.amIOld();
+			System.out.println();
 		}
-		p.amIOld();
-		System.out.println();
-            }
 	sc.close();
     }
 }
