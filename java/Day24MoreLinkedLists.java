@@ -2,17 +2,17 @@ import java.io.*;
 import java.util.*;
 	
 class Node{
-	int data;
-	Node next;
-	Node(int d){
-        data=d;
-        next=null;
-    }
+		int data;
+		Node next;
+		Node(int d){
+			data=d;
+		next=null;
+	}
 }
 	
 class Solution{
 		
-	public static Node removeDuplicates(Node head) {
+        public static Node removeDuplicates(Node head) {
 		//Write your code here
 		if (head == null || head.next == null) {
 		  	return head;
@@ -24,7 +24,7 @@ class Solution{
 		  	removeDuplicates(head.next);
 		}
 		  	return head;
-    }
+    	}
 
 	public static  Node insert(Node head,int data){
 		Node p=new Node(data);			
@@ -40,7 +40,7 @@ class Solution{
 			start=start.next;
 		  	start.next=p;
 		}
-      return head;
+      		return head;
 	}
   
 	public static void display(Node head){
@@ -49,7 +49,7 @@ class Solution{
 			System.out.print(start.data+" ");
 			start=start.next;
 		}
-    }
+    	}
   
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
