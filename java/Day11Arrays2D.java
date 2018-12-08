@@ -14,8 +14,16 @@ public class Solution {
         int maxSum = -100, laikinas;
         for(int i = 0; i < nInColumn; i++){
             for(int j = 0; j < nInRow; j++){
-                laikinas=arr[i][j]+arr[i][j+1]+arr[i][j+2]+arr[i+1][j+1]+
-                    arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2];
+                /* Calculate the hourglass sum for every hourglass */
+                /* We define an hourglass in to be a subset of values with indices 
+                   falling in this pattern in 's graphical representation: 
+                   a b c
+                     d
+                   e f g
+                */
+                laikinas = arr[i][j] + arr[i][j+1] + arr[i][j+2] +
+                                       arr[i+1][j+1] +
+                         arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2];
                 if(laikinas > maxSum){
                     maxSum = laikinas;
                 }         
