@@ -13,7 +13,7 @@ class Node {
 class Solution {
     public static  Node insert(Node head,int data) {
         //Complete this method
-        if(head == null){
+        if(head == null) {
             return new Node(data);
         } else if(head.next == null){
             head.next = new Node(data);
