@@ -36,15 +36,13 @@ public class Solution{
 
         int a = FIRST_NUMBER_OF_SET;
         int tempValue = 0;
-        for(int i = 0; i < lastNumberOfSet - 1; i++){
-                       
+        
+        for(int i = 0; i < lastNumberOfSet - 1; i++){ 
             int b = a + 1;
-            
             for(int j = 0; j < lastNumberOfSet - 1 - i; j++){   
-                
                 if((a & b) > tempValue && (a & b) < givenInteger){
                     tempValue = a & b;
-                    }    
+                }    
                 b++;
             }
             a++;
