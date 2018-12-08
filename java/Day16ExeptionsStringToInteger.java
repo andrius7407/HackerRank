@@ -5,8 +5,7 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
-    static void convert(String raw){
-        
+    static void convert(String raw){        
         try{
             int stringInt = Integer.parseInt(raw);
             System.out.println(stringInt);
