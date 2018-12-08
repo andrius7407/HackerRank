@@ -11,8 +11,7 @@ public class Solution {
             System.out.println(stringInt);
         }catch(NumberFormatException e){
             System.out.println("Bad String");
-        }
-        
+        }    
     }
     
     public static void main(String[] args) {
