@@ -1,21 +1,25 @@
-	public static void display(Node head) {
-        Node start = head;
-        while(start != null) {
-            System.out.print(start.data + " ");
-            start = start.next;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    static void convert(String raw){
+        
+        try{
+            int stringInt = Integer.parseInt(raw);
+            System.out.println(stringInt);
+        }catch(NumberFormatException e){
+            System.out.println("Bad String");
         }
+        
     }
-
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        Node head = null;
-        int N = sc.nextInt();
-
-        while(N-- > 0) {
-            int ele = sc.nextInt();
-            head = insert(head,ele);
-        }
-        display(head);
-        sc.close();
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        convert(S);
+        in.close();
     }
 }
