@@ -5,9 +5,9 @@ class Node {
 	int data;
 	Node next;
 	Node(int d) {
-        data = d;
-        next = null;
-    }
+		data = d;
+		next = null;
+	}
 }
 
 class Solution {
@@ -15,15 +15,15 @@ class Solution {
         //Complete this method
         if(head == null){
             return new Node(data);
-        }else if(head.next == null){
+        } else if(head.next == null){
             head.next = new Node(data);
-        }else{
+        } else{
             insert(head.next, data);
         }
         return head;
     }
     
-    	public static void display(Node head) {
+    public static void display(Node head) {
         Node start = head;
         while(start != null) {
             System.out.print(start.data + " ");
