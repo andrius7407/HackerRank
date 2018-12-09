@@ -8,19 +8,22 @@ class Node{
         left=right=null;
     }
 }
+
 class Solution{
-	public static int getHeight(Node root){
-      //Write your code here
-         if(root == null) {
-           return -1;
-       }
+	
+    public static int getHeight(Node root){
+        //Write your code here
+        if(root == null) {
+            return -1;
+        }
        
-       int left = 1 + getHeight(root.left);
-       int right = 1 + getHeight(root.right);
+        int left = 1 + getHeight(root.left);
+        int right = 1 + getHeight(root.right);
         
-       return Math.max(left, right);
+        return Math.max(left, right);
     }
-        public static Node insert(Node root,int data){
+    
+    public static Node insert(Node root,int data){
         if(root==null){
             return new Node(data);
         }
@@ -37,7 +40,8 @@ class Solution{
             return root;
         }
     }
-	 public static void main(String args[]){
+    
+	public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
         Node root=null;
