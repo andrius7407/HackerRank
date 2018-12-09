@@ -19,8 +19,7 @@ class Solution{
         }
        
         int left = 1 + getHeight(root.left);
-        int right = 1 + getHeight(root.right);
-        
+        int right = 1 + getHeight(root.right);        
         return Math.max(left, right);
     }
     
