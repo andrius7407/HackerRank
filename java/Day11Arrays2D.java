@@ -7,6 +7,7 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
+    
     static void countMaxSum(int[][]arr){
         int nInRow = arr[0].length - 2;
         int nInColumn = arr[1].length - 2;
@@ -32,7 +33,6 @@ public class Solution {
         System.out.println(maxSum);
     }
 
-
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -48,8 +48,7 @@ public class Solution {
             }
         }
         
-        countMaxSum(arr);
-        
+        countMaxSum(arr);        
         scanner.close();
     }
 }
