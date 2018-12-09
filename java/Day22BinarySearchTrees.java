@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+
 class Node{
     Node left,right;
     int data;
@@ -41,7 +42,7 @@ class Solution{
         }
     }
     
-	public static void main(String args[]){
+    public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
         Node root=null;
