@@ -25,8 +25,7 @@ class Difference {
             }
         }
     }
-    
-    } // End of Difference class
+} // End of Difference class
 
 public class Solution {
 
@@ -40,7 +39,6 @@ public class Solution {
         sc.close();
 
         Difference difference = new Difference(a);
-
         difference.computeDifference();
 
         System.out.print(difference.maximumDifference);
