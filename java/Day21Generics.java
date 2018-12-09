@@ -13,8 +13,7 @@ class Printer <T> {
             System.out.println(array[i]);
         }
     }
-    
-    }
+}
 
 public class Generics {
     
