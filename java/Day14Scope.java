@@ -4,11 +4,10 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-
 class Difference {
-  	private int[] elements;
-  	public int maximumDifference;
-    	// Add your code here
+    private int[] elements;
+    public int maximumDifference;
+    // Add your code here
     Difference(int[] elem){
         this.elements = elem;
     }
